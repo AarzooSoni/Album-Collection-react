@@ -1,0 +1,95 @@
+
+.albumContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f7f7f7;
+}
+
+.albumBox {
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem;
+    text-transform: capitalize;
+    background: linear-gradient(to top, #ffecd2, #fcb69f);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.albumBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 188, 143, 0.7);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 .5rem;
+    width: 100%;
+}
+
+.buttons button {
+    width: 100px;
+    padding: .7rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+}
+
+.buttons .delete {
+    color: white;
+    background-color: #ff5e5e;
+    margin-right: .5rem;
+}
+
+.buttons .delete:hover {
+    box-shadow: 0px 0px 10px #ff5e5e;
+}
+
+.buttons .update {
+    background-color: #ffd54f;
+    color: black;
+    margin-left: .5rem;
+}
+
+.buttons .update:hover {
+    box-shadow: 0px 0px 10px #ffd54f;
+}
+
+.albumUserId, .albumName {
+    background: #ffffffaa;
+    width: 80%;
+    border-radius: .5rem;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.albumName {
+    width: 90%;
+}
+
+.albumUserId:hover, .albumName:hover {
+    background: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
